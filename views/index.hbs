@@ -1,6 +1,15 @@
 <h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<p>Option 1</p>
 <form action="/" method="post" enctype="multipart/form-data">
+    <label for="document"></label>
+    <input type="file" name="document" id="document">
+    <br>
+    <input type="submit" value="Send">
+</form>
+
+
+<p>Option 2</p>
+<form action="/option2" method="post" enctype="multipart/form-data">
     <label for="document"></label>
     <input type="file" name="document" id="document">
     <br>

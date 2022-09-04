@@ -45,6 +45,7 @@ router.post('/',  upload.single('document'), async function(req, res, next) {
     res.send(pdfBuf);
 });
 
+
 router.post('/option1',  upload.single('document'), async function(req, res, next) {
     const file = req.file;
     if (!file) {
@@ -63,12 +64,8 @@ router.post('/option1',  upload.single('document'), async function(req, res, nex
     res.send(pdfBuf);
 });
 
-/* GET home page. */
-router.get('/option2', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
 
-router.post('/',  upload.single('document'), async function(req, res, next) {
+router.post('/option2',  upload.single('document'), async function(req, res, next) {
     const file = req.file;
     if (!file) {
         const error = new Error('Upload file again!');
